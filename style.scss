@@ -9,6 +9,7 @@ $neutral_egg: hsl(30, 54%, 90%);
 $neutral_grey: hsl(30, 18%, 87%);
 $neutral_brown: hsl(30, 10%, 34%);
 $neutral_charcoal: hsl(24, 5%, 18%);
+$neutral_brandy: #854632;
 
 // TYPOGRAPHY VARIABLES
 $main_font: "Outfit", sans-serif;
@@ -58,26 +59,69 @@ body {
             .preparation_title {
                 font-weight: 600;
                 color: $primary_raspberry;
-                font-size: 20px;
+                font-size: 18px;
                 margin-bottom: 16px;
             }
+        }
 
-            .preparation_item {
-                margin-left: 24px;
+    }
 
-                .item_strong {
-                    margin-left: 28px;
-                }
+    .nutri_values {
+        margin-top: 24px;
 
-                &:not(:last-child) {
-                    margin-bottom: 8px;
-                }
+        .values_container {
+            display: flex;
+            align-items: center;
+            padding-left: 32px;
+            gap: 306px;
 
-                &::marker {
-                    color: $primary_raspberry;
-                    font-size: 12px;
-                }
+            .type {
+                width: 80px;
+            }
+
+            .value {
+                font-weight: 600;
+                color: $neutral_brandy;
             }
         }
+
+        .nutri_divider {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            border-color: $neutral_rose;
+        }
     }
+}
+
+// SHARED STYLES
+.section_title {
+    font-family: $secondary_font;
+    color: $neutral_brandy;
+    font-weight: 400;
+    font-size: 27px;
+    margin-bottom: 24px;
+}
+
+.list_item {
+    margin-left: 24px;
+
+    .item_strong {
+        margin-left: 28px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &::marker {
+        color: $primary_raspberry;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.divider {
+    border-color: $neutral_rose;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }

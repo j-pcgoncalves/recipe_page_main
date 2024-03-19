@@ -41,19 +41,56 @@ body .main_container .preparation_container {
 body .main_container .preparation_container .preparation_title {
   font-weight: 600;
   color: hsl(332, 51%, 32%);
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 16px;
 }
-body .main_container .preparation_container .preparation_item {
+body .nutri_values {
+  margin-top: 24px;
+}
+body .nutri_values .values_container {
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  gap: 306px;
+}
+body .nutri_values .values_container .type {
+  width: 80px;
+}
+body .nutri_values .values_container .value {
+  font-weight: 600;
+  color: #854632;
+}
+body .nutri_values .nutri_divider {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-color: hsl(330, 100%, 98%);
+}
+
+.section_title {
+  font-family: "Young Serif", serif;
+  color: #854632;
+  font-weight: 400;
+  font-size: 27px;
+  margin-bottom: 24px;
+}
+
+.list_item {
   margin-left: 24px;
 }
-body .main_container .preparation_container .preparation_item .item_strong {
+.list_item .item_strong {
   margin-left: 28px;
 }
-body .main_container .preparation_container .preparation_item:not(:last-child) {
+.list_item:not(:last-child) {
   margin-bottom: 8px;
 }
-body .main_container .preparation_container .preparation_item::marker {
+.list_item::marker {
   color: hsl(332, 51%, 32%);
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.divider {
+  border-color: hsl(330, 100%, 98%);
+  margin-top: 32px;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=style.css.map */
