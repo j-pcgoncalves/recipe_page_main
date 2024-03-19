@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+// COLORS VARIABLES
+$primary_nutmeg: hsl(14, 45%, 36%);
+$primary_raspberry: hsl(332, 51%, 32%);
+$neutral_rose: hsl(330, 100%, 98%);
+$neutral_egg: hsl(30, 54%, 90%);
+$neutral_grey: hsl(30, 18%, 87%);
+$neutral_brown: hsl(30, 10%, 34%);
+$neutral_charcoal: hsl(24, 5%, 18%);
+
+// TYPOGRAPHY VARIABLES
+$main_font: "Outfit", sans-serif;
+$secondary_font: "Young Serif", serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main_font;
+    background-color: $neutral_egg;
+    padding: 124px 352px;
+    color: $neutral_brown;
+
+    .main_container {
+        background-color: white;
+        border-radius: 12px;
+        padding: 40px;
+
+        .recipe_img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .recipe_title {
+            font-family: $secondary_font;
+            font-weight: 400;
+            font-size: 45px;
+            margin-bottom: 24px;
+            color: $neutral_charcoal;
+        }
+
+        .recipe_sub {
+            margin-bottom: 32px;
+        }
+
+        .preparation_container {
+            background-color: $neutral_rose;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 32px;
+
+            .preparation_title {
+                font-weight: 600;
+                color: $primary_raspberry;
+                font-size: 20px;
+                margin-bottom: 16px;
+            }
+
+            .preparation_item {
+                margin-left: 24px;
+
+                .item_strong {
+                    margin-left: 28px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+
+                &::marker {
+                    color: $primary_raspberry;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

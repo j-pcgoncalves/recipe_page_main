@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(30, 54%, 90%);
+  padding: 124px 352px;
+  color: hsl(30, 10%, 34%);
+}
+body .main_container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+}
+body .main_container .recipe_img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+body .main_container .recipe_title {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 45px;
+  margin-bottom: 24px;
+  color: hsl(24, 5%, 18%);
+}
+body .main_container .recipe_sub {
+  margin-bottom: 32px;
+}
+body .main_container .preparation_container {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 32px;
+}
+body .main_container .preparation_container .preparation_title {
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+body .main_container .preparation_container .preparation_item {
+  margin-left: 24px;
+}
+body .main_container .preparation_container .preparation_item .item_strong {
+  margin-left: 28px;
+}
+body .main_container .preparation_container .preparation_item:not(:last-child) {
+  margin-bottom: 8px;
+}
+body .main_container .preparation_container .preparation_item::marker {
+  color: hsl(332, 51%, 32%);
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
